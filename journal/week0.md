@@ -21,7 +21,7 @@ This means the 750 hrs can be used up before the end of a month and for these ex
 
 To ensure that you are running within the free tier scope, especially  for the 12 months free services that can potentially be exhausted before the end 0of month, ensure to track your usage with the free tier option in Billing
 
-![Free tier](0-asset\1.Freetier.PNG)
+![Free tier](0-asset/1.Freetier.PNG)
 
 In the diagram above, no data is populated yet on this free account, however, ensure to check back at intervals to monitor your free tier usage
 
