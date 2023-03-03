@@ -48,7 +48,7 @@ There are 2 ways to manage billing alert
 
 > **Note** : Ensure to save the billing preferences before this step, otherwise billing will not be listed in the Metrics options
 
-- Name the metric and set a threshold. 
+- Name the metric and set a threshold. $5 is the threshold set below 
 !["Manage Billing"](0-asset/4.ManageAlert1.PNG)
 
 - Create a new sns topic if one doesn't exist already.
@@ -69,14 +69,38 @@ There are 2 ways to manage billing alert
 
 !["Budgeting"](0-asset/5.Budgeting.PNG)
 !["Budgeting"](0-asset/5.Budgeting2.PNG)
+
 !["Budgeting"](0-asset/5.Budgeting3.PNG)
+
 Threshold scope for notifications
 
 !["Budgeting"](0-asset/5.Budgeting4.PNG)
 
 > **Note**: Only 2 free budgets can be created on a free tier accounts, subsequent creation will attract cost. So again, use with great care :+1:
 
+## Cost Allocation Tags
 
+While the usage of Tags are not popular, but coat alloation tags can be very helpful to group cost based on business logic. 
+
+This is especially helpful in a big instrasture and multiple business units are using same AWS build etc Tags can be used to track spending per business unit
+
+!["Budgeting"](0-asset/6.Tags.PNG)
+
+## Cost Explorer
+
+- Provides interface to visualize , understand and manage soending and usage over specific period e.g montly, weekly, daily 
+
+- Generate reports as desired
+
+## Credits
+
+View, redeem and track all credits on the account via the credits tab
+
+!["Tags"](0-asset/7.Tags.PNG)
+
+## Pricing Calculator
+
+Use the calculator to get estimated cost of different service based on various conditions and usage
 
 
 
