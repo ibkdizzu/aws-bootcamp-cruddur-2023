@@ -158,12 +158,12 @@ Follow the steps below to set up AWS cloud trail
 
 - Name the event, check to enable trail for the entire account (i.e all OUs), name the KMS and add a tag
 
-["Orgs"](0-asset/9.CloudTrail2.PNG)
-["Orgs"](0-asset/9.CloudTrail3.PNG)
+!["Orgs"](0-asset/9.CloudTrail2.PNG)
+!["Orgs"](0-asset/9.CloudTrail3.PNG)
 
 - Select management options
 
-["Orgs"](0-asset/9.CloudTrail4.PNG)
+!["Orgs"](0-asset/9.CloudTrail4.PNG)
 
 Click through to complete registration
 
@@ -178,7 +178,7 @@ Create user
 
 Follow the steps below to create user
 
-["user"](0-asset/10.User.PNG)
+!["user"](0-asset/10.User.PNG)
 
 Click through, add a tag and finish the user creation
 
@@ -190,4 +190,4 @@ Other activities that can be carried on this user account
 - Add to a group
 - Attach a policy e.g Administrator access if the user is to be an administrator access
 
-["user"](0-asset/10.User5.PNG)
+!["user"](0-asset/10.User5.PNG)
