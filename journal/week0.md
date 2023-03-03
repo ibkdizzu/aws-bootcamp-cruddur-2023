@@ -78,7 +78,7 @@ Threshold scope for notifications
 
 > **Note**: Only 2 free budgets can be created on a free tier accounts, subsequent creation will attract cost. So again, use with great care :+1:
 
-## Cost Allocation Tags
+##   Cost Allocation Tags
 
 While the usage of Tags are not popular, but coat alloation tags can be very helpful to group cost based on business logic. 
 
@@ -86,28 +86,108 @@ This is especially helpful in a big instrasture and multiple business units are 
 
 !["Budgeting"](0-asset/6.Tags.PNG)
 
-## Cost Explorer
+### Cost Explorer
 
 - Provides interface to visualize , understand and manage soending and usage over specific period e.g montly, weekly, daily 
 
 - Generate reports as desired
 
-## Credits
+### Credits
 
 View, redeem and track all credits on the account via the credits tab
 
 !["Tags"](0-asset/7.Tags.PNG)
 
-## Pricing Calculator
+### Pricing Calculator
 
 Use the calculator to get estimated cost of different service based on various conditions and usage
 
 
+## Security in the cloud
 
+Goal: To protect data applications and services in the cloud environment
 
+- Reduces human error responsible for data leaks
+- Reduce impact of breach
 
+### Security Best Practises
+** Identity and Access Management (IAM)
+A. Add MFA to Root account
 
+Disadvantages of using MFA
+- log in anywhere
+- need to carry authenticator with you anywhere
 
+B. Create an Organization Unit
 
+Organization: Provides a centralzed way to consolidate mulitiple AWS accounts in order to manage accounts, security policies, billings etc centrally.
+Accounts are created in or invited into the organization by an administrator
 
+Organization unit (OU): Allows you to group accounts together in other to manage and administer them as a single unit. E.g Policies can be attached to an OU which is then inherited by all accounts under it
 
+Root Account: The root account is a management account and is recommended to only be used to create Organizations and Organization units. It should not have any applications or run any services or tasks
+It should also not be frequently accessed and only be reserved for administrative tasks such as account creations and policy management.
+It is recommended to be MFA enabled
+
+- Creating Organization Units
+
+Find the AWS Organization service in the seach bar > Create New Organization
+
+!["Orgs"](0-asset/8.Orgs.PNG)
+
+By default the root organization already exists and is attached to the user that created the AWS account
+
+!["Orgs"](0-asset/8.Orgs2.PNG)
+
+To create a new organization, check the root org so the create new OU option can be available
+
+!["Orgs"](0-asset/8.Orgs4.PNG)
+
+For this account, I created my OUs based on the projects I'm working on at the moment so I can track and managed usage per project. 
+
+!["Orgs"](0-asset/8.Orgs5.PNG)
+
+However most enterprise accounts create OU based on business logic/department e.g 
+
+"Finance BU", "Engineering BU", "HR BU" or 
+"Active Account" that holds accounts actively in use, "Standby Account" that holds account thats is readily available when needed
+
+C. CloudTrail: Auditing service from AWS. It logs *all activities carried out on an AWS account
+
+Follow the steps below to set up AWS cloud trail
+
+- Name the event, check to enable trail for the entire account (i.e all OUs), name the KMS and add a tag
+
+["Orgs"](0-asset/9.CloudTrail2.PNG)
+["Orgs"](0-asset/9.CloudTrail3.PNG)
+
+- Select management options
+
+["Orgs"](0-asset/9.CloudTrail4.PNG)
+
+Click through to complete registration
+
+> **Note**: Some charges will apply
+
+D Create IAM Users
+
+IAM users are one of 3 types of users available in AWS. Other users are
+- Federated user
+- 
+Create user
+
+Follow the steps below to create user
+
+["user"](0-asset/10.User.PNG)
+
+Click through, add a tag and finish the user creation
+
+* Download the csv provided. It has the login details as well as the sign on login for the user
+
+Other activities that can be carried on this user account
+- Set up MFA (since it has console access)
+- Create access key from pro
+- Add to a group
+- Attach a policy e.g Administrator access if the user is to be an administrator access
+
+["user"](0-asset/10.User5.PNG)
