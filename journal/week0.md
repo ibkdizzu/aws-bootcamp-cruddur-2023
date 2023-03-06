@@ -191,3 +191,48 @@ Other activities that can be carried on this user account
 - Attach a policy e.g Administrator access if the user is to be an administrator access
 
 !["user"](0-asset/10.User5.PNG)
+
+## IAM POLICIES
+
+Types of Roles
+- user managed
+- AWS managed
+
+### AWS IAM Roles vs AWS Policy
+It is often common to confuse and be confused about the similarities and differences between AWS IAM roles and policies. The next few lines attempt to sicuss this
+
+#### IAM Roles:
+The IAM role is a type of IAM identity created to have specific permissions. Other identities are IAM users, IAM groups etc, and IAM roles is just one of them
+IAM Role is very important and handy because it is not acctached to a specific user, it can be assumed by anyone who needs it. E.g users with no permission to certain resources, users outside of the aws account, applications , services etc. 
+With roles all of these can have access to AWS resources iwithout hving toshare access keys or create IAM user accounts for them
+
+#### IAM Policy:
+This is a set of rules that defines the type on actions that can be carried out on n AWS resource
+IAM policies can be
+User-based: i.e defines the permissions allowed or denied an identity (i.e user, groups or roles)
+Resource based: Defines the permissions allowed resource given a user
+A policy can allow or deny an action
+Roles and Policies go hand in hand
+
+#### Principle of Least Priviledge
+- keep roles fairly simple
+- Create roles
+- Attach policy
+
+- Create a new role following the steps below
+Click on **create role**
+!["user"](0-asset/11.Roles.PNG)
+
+Select the type of role and resources 
+!["user"](0-asset/11.Roles2.PNG)
+
+Search and select role
+!["user"](0-asset/11.Roles3.PNG)
+
+Name the role and add a description and tag (optional)
+!["user"](0-asset/11.Roles4.PNG)
+
+!["user"](0-asset/11.Roles5.PNG)
+
+- Attach a policy to an existing role
+
