@@ -12,7 +12,6 @@
 			"extensions": [
 				"ms-azuretools.vscode-docker",
 				"ms-python.python",
-				"dracular-theme.theme-dracular",
 				"vscodevim.vim"
 			]
 		}
